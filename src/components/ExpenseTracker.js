@@ -3,7 +3,7 @@ import Budget from "../Images/Budget Tracker.jpg";
 
 const ExpenseTracker = () => {
   return (
-    <div>
+    <div id="expense">
       <div className="w-full items-center px-12 flex flex-col-reverse md:flex-row justify-between bg-[#403C3C]">
         <div className="left text-center text-white mt-8">
           <p className="text-3xl font-bold md:px-12">
@@ -11,12 +11,26 @@ const ExpenseTracker = () => {
           </p>
           <p className="mt-4 text-xl">Checkout Tasks App Now!</p>
           <div className="space-x-4">
-            <button className="mt-16 bg-[#0C24FD] p-3 rounded-full font-semibold hover:bg-blue-700">
-              Visit App
-            </button>
-            <button className="mt-4 mb-8 bg-[#0C24FD] p-3 rounded-full font-semibold hover:bg-blue-700">
-              Check Github for Code
-            </button>
+            <a
+              href="https://budget-tracker-app-react.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <button className="mt-16 bg-[#0C24FD] p-3 rounded-full font-semibold hover:bg-blue-700">
+                Visit App
+              </button>
+            </a>
+            <a
+              href="https://github.com/Devrajsinh-Jhala/Budget-App"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <button className="mt-4 mb-8 bg-[#0C24FD] p-3 rounded-full font-semibold hover:bg-blue-700">
+                Check Github for Code
+              </button>
+            </a>
           </div>
         </div>
         <div className="right align-middle items-center text-center justify-center">

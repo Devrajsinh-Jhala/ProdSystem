@@ -1,5 +1,7 @@
 import React from "react";
 import Prodsystem from "../Images/Prodsystem.png";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -26,18 +28,42 @@ const Navbar = () => {
       </svg>
 
       <div className="pr-8 md:block hidden text-white md:mx-auto">
-        <a href="#" className="p-4">
+        <Link
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to={"/"}
+          className="p-4"
+        >
           Home
-        </a>
-        <a href="#" className="p-4">
+        </Link>
+        <Link
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to={"task"}
+          className="p-4"
+        >
           Task-It
-        </a>
-        <a href="#" className="p-4">
+        </Link>
+        <Link
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to={"notes"}
+          className="p-4"
+        >
           Notes App
-        </a>
-        <a href="#" className="p-4">
+        </Link>
+        <Link
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="expense"
+          className="p-4"
+        >
           Expense Tracker
-        </a>
+        </Link>
       </div>
     </nav>
   );

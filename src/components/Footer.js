@@ -1,11 +1,20 @@
 import React from "react";
 import Prodsystem from "../Images/Prodsystem.png";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <div className="flex md:justify-between md:items-center px-16 mt-5 mb-5 justify-center">
       <div className="logo hidden md:block">
-        <img src={Prodsystem} className="h-10 w-20" alt="Logo" />
+        <img
+          onClick={() => scrollToTop()}
+          src={Prodsystem}
+          className="h-10 w-20 cursor-pointer"
+          alt="Logo"
+        />
       </div>
 
       <div className="copyright items-center justify-center text-center font-mono font-bold hidden md:block">

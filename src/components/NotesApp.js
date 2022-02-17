@@ -3,7 +3,7 @@ import Notes from "../Images/NoteTaking.jpg";
 
 const NotesApp = () => {
   return (
-    <div>
+    <div id="notes">
       <div className="w-full items-center px-12 flex flex-col-reverse md:flex-row justify-between">
         <div className="left text-center mt-8">
           <p className="text-3xl font-bold md:px-12">
@@ -11,9 +11,17 @@ const NotesApp = () => {
           </p>
           <p className="mt-4 text-xl">Checkout Noteify Now!</p>
           <div className="space-x-4">
-            <button className="mt-16 bg-[#0C24FD] text-white p-3 rounded-full font-semibold hover:bg-blue-700">
-              Visit App
-            </button>
+            <a
+              href="https://noteify-react.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <button className="mt-16 bg-[#0C24FD] text-white p-3 rounded-full font-semibold hover:bg-blue-700">
+                Visit App
+              </button>
+            </a>
+
             <button className="mt-4 mb-8 bg-[#0C24FD] text-white p-3 rounded-full font-semibold hover:bg-blue-700">
               Check Github for Code
             </button>
