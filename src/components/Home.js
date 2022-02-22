@@ -3,10 +3,11 @@ import ExpenseTracker from "./ExpenseTracker";
 import NotesApp from "./NotesApp";
 import TaskIt from "./TaskIt";
 import { animateScroll as scroll } from "react-scroll";
-import { scrollToBottom } from "react-scroll/modules/mixins/animate-scroll";
+
+import Footer from "./Footer";
 
 const Home = () => {
-  const scrollToBottom = () => {
+  const scrollToBottomFunc = () => {
     scroll.scrollToBottom();
   };
   return (
@@ -24,6 +25,7 @@ const Home = () => {
           <a
             href="https://github.com/Devrajsinh-Jhala/ProdSystem"
             target={"_blank"}
+            rel="noopener noreferrer"
           >
             <button className="bg-[#0C24FD] p-4 text-white font-mono font-bold rounded-full align-middle items-center text-center hover:bg-blue-700">
               View Github &#8594;
@@ -31,8 +33,8 @@ const Home = () => {
           </a>
 
           <button
-            onClick={() => scrollToBottom()}
-            className="bg-[#0C24FD] p-4 text-white font-mono font-bold rounded-full align-middle items-center text-center hover:bg-blue-700"
+            onClick={() => scrollToBottomFunc()}
+            className="mt-4 md:mt-0 bg-[#0C24FD] p-4 text-white font-mono font-bold rounded-full align-middle items-center text-center hover:bg-blue-700"
           >
             Connect &#8595;
           </button>
@@ -41,6 +43,7 @@ const Home = () => {
       <TaskIt />
       <NotesApp />
       <ExpenseTracker />
+      <Footer />
     </div>
   );
 };

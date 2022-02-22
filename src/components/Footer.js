@@ -19,12 +19,16 @@ const Footer = () => {
 
       <div className="copyright items-center justify-center text-center font-mono font-bold hidden md:block">
         <p className="text-2xl font-mono font-semibold">
-          &copy; Devraj Jhala 2022
+          Made with 🧡 by Devraj Jhala
         </p>
       </div>
       <div className="media-icons flex md:justify-between md:flex-row gap-8 justify-center">
         {/* Instagram */}
-        <a href="https://www.instagram.com/devrajsinh.jhala/" target="_blank">
+        <a
+          href="https://www.instagram.com/devrajsinh.jhala/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="36"
@@ -40,6 +44,7 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/devrajsinh-jhala-673988200/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +58,11 @@ const Footer = () => {
         </a>
 
         {/* Twitter */}
-        <a href="https://twitter.com/JHALA_D_S" target="_blank">
+        <a
+          href="https://twitter.com/JHALA_D_S"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="36"
