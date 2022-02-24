@@ -3,7 +3,7 @@ import Prodsystem from "../Images/Prodsystem.png";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ toggleDropdown }) => {
   return (
     <nav className="flex justify-between items-center p-3 px-10 bg-[#403C3C] ">
       <img
@@ -18,6 +18,7 @@ const Navbar = () => {
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
+        onClick={toggleDropdown}
       >
         <path
           strokeLinecap="round"

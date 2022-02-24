@@ -3,12 +3,11 @@ import ExpenseTracker from "./ExpenseTracker";
 import NotesApp from "./NotesApp";
 import TaskIt from "./TaskIt";
 import { animateScroll as scroll } from "react-scroll";
-import { scrollToBottom } from "react-scroll/modules/mixins/animate-scroll";
 
 import Footer from "./Footer";
 
 const Home = () => {
-  const scrollToBottomFunc = () => {
+  const scrollToBottom = () => {
     scroll.scrollToBottom();
   };
   return (
@@ -34,7 +33,7 @@ const Home = () => {
           </a>
 
           <button
-            onClick={() => scrollToBottomFunc()}
+            onClick={() => scrollToBottom()}
             className="mt-1 sm:mt-0 bg-[#0C24FD] p-4 text-white font-mono font-bold rounded-full align-middle items-center text-center hover:bg-blue-700"
           >
             Connect &#8595;
