@@ -7,12 +7,12 @@ const ExpenseTracker = () => {
       <div className="w-full items-center px-12 flex flex-col-reverse md:flex-row justify-between bg-[#403C3C]">
         <div className="left text-center text-white mt-8">
           <p className="text-3xl font-bold md:px-12">
-            Never forget your planned tasks
+            Never forget to secure your pockets
           </p>
-          <p className="mt-4 text-xl">Checkout Tasks App Now!</p>
+          <p className="mt-4 text-xl">Checkout Tracxpense Now!</p>
           <div className="space-x-4">
             <a
-              href="https://budget-tracker-app-react.netlify.app/"
+              href="https://tracxpense.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -22,7 +22,7 @@ const ExpenseTracker = () => {
               </button>
             </a>
             <a
-              href="https://github.com/Devrajsinh-Jhala/Budget-App"
+              href="https://github.com/Devrajsinh-Jhala/Expense-Tracker"
               target="_blank"
               rel="noopener noreferrer"
             >

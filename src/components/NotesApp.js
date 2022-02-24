@@ -12,7 +12,7 @@ const NotesApp = () => {
           <p className="mt-4 text-xl">Checkout Noteify Now!</p>
           <div className="space-x-4">
             <a
-              href="https://noteify-react.herokuapp.com/"
+              href="https://note-ify.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -22,9 +22,15 @@ const NotesApp = () => {
               </button>
             </a>
 
-            <button className="mt-4 mb-8 bg-[#0C24FD] text-white p-3 rounded-full font-semibold hover:bg-blue-700">
-              Check Github for Code
-            </button>
+            <a
+              href="https://github.com/Devrajsinh-Jhala/Note-ify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="mt-4 mb-8 bg-[#0C24FD] text-white p-3 rounded-full font-semibold hover:bg-blue-700">
+                Check Github for Code
+              </button>
+            </a>
           </div>
         </div>
         <div className="right align-middle items-center text-center justify-center">

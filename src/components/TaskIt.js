@@ -12,7 +12,7 @@ const TaskIt = () => {
           <p className="mt-4 text-xl">Checkout Tasks App Now!</p>
           <div className="space-x-4">
             <a
-              href="http://task-it-react.herokuapp.com/"
+              href="https://task-it-react.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -23,7 +23,7 @@ const TaskIt = () => {
             </a>
 
             <a
-              href="https://github.com/Devrajsinh-Jhala/ToDo-App"
+              href="https://github.com/Devrajsinh-Jhala/Task-It"
               target="_blank"
               rel="noopener noreferrer"
             >
